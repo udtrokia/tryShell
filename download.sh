@@ -9,8 +9,9 @@ source urls.sh
 echo "len of list: ${#urls[@]}"
 
 #domain
-domain="https://www.zhangmen.com"
+domain=""
 
+#concact domain and relative path
 for url in ${urls[@]};
 do  wget -P imgs "$domain$url"
 done
